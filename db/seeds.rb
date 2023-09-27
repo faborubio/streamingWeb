@@ -7,13 +7,13 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 5.times do |i|
-  Movie.create(name: "Movie {i}", synopsis: "synopsis {i}", director: "director {i}")
+  Movie.create(name: "Movie #{i}", synopsis: "synopsis #{i}", director: "director #{i}")
 end
 
 5.times do |i|
-  Serie.create(name: "Movie {i}", synopsis: "synopsis {i}", director: "director {i}")
+  Serie.create(name: "Movie #{i}", synopsis: "synopsis #{i}", director: "director #{i}")
 end
 
 5.times do |i|
-  DocumentaryFilm.create(name: "Movie {i}", synopsis: "synopsis {i}", director: "director {i}")
+  DocumentaryFilm.create(name: "Movie #{i}", synopsis: "synopsis #{i}", director: "director #{i}")
 end

@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   post "movies" => "movies#create"
   post "series" => "series#create"
   post "documentaryfilms" => "documentaryfilms#create"
+  post "documentaryfilms" => "documentaryfilms#new"
 end

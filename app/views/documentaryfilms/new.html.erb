@@ -1,2 +1,25 @@
 <h1>Documentaryfilms#new</h1>
 <p>Find me in app/views/documentaryfilms/new.html.erb</p>
+
+<div class="justify-content-center">
+  <div class="card col-6">
+    <%= form_with model: @documentaryfilms, method: :post do |form| %>
+      <div class="mb-3">
+        <%= form.label :name, "Documental Name", class:"form-label" %>
+        <%= form.text_field :title, class:"form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :synopsis, "Synopsis", class:"form-label" %>
+        <%= form.text_field :synopsis, class:"form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :director, "Director", class:"form-label" %>
+        <%= form.text_field :director, class:"form-control" %>
+      </div>
+
+      <div class="text-center my-3">
+        <%= form.submit "Enviar", class: "btn btn-blue" %>
+      </div>
+    <% end %>
+  </div>
+</div>
